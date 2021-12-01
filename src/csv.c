@@ -42,9 +42,13 @@ int main() {
         printf("%d ", strings[i]);
     }
 
+    printf("\n");
+
     parse_csv(quotes, strings, S(quotes), str);
 
     for(int i = 0; i < S(str)-1; i++) {
         printf("%d ", strings[i]);
     }
+    
+    printf("\n");
 }
