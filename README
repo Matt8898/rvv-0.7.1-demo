@@ -1,0 +1,9 @@
+A few vectorized algorithms for rvv 0.7.1
+
+A risc-v cross compiler + assembler supporting rvv 0.7.1 is required (other versions might be able to assemble the code, but it won't run properly)
+
+Still to be done:
+- provide instructions for obtaining a working cross compiler
+- find a commit of `spike` that actually supports all of rvv 0.7.1
+- port to rvv 1.0
+- more accurate profiling (anything that isn't gettimeofday seems to segfault on a nezha d1, even when using the official toolchain)
