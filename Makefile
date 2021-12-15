@@ -1,5 +1,7 @@
-CC := /var/lib/machines/ubuntuintel/root/allwinner/tina/prebuilt/gcc/linux-x86/riscv/toolchain-thead-glibc/riscv64-glibc-gcc-thead_20200702/bin/riscv64-unknown-linux-gnu-gcc
-AS := ../rvtoolchain2/bin/riscv64-unknown-elf-as
+#CC := /var/lib/machines/ubuntuintel/root/allwinner/tina/prebuilt/gcc/linux-x86/riscv/toolchain-thead-glibc/riscv64-glibc-gcc-thead_20200702/bin/riscv64-unknown-linux-gnu-gcc
+#AS := ../rvtoolchain2/bin/riscv64-unknown-elf-as
+CC := ../spike/toolchain-spike/bin/riscv64-unknown-elf-gcc
+AS := ../spike/toolchain-spike/bin/riscv64-unknown-elf-as
 
 SFC := $(shell find src/ -type f -name '*.c')
 SFS := $(SFC:.c=-s.S)
